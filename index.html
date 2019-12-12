@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+        <link rel="stylesheet" href="styles/main.css">
+        <title>Fridgy - Connexion </title>
+    </head>
+    <body>
+        <div class="container">
+            <div id="firebaseui-auth-container">
+
+            </div>
+        </div>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-analytics.js"></script>
+        <script>
+            // Your web app's Firebase configuration
+            let firebaseConfig = {
+                apiKey: "AIzaSyCMxzO2knPCoMQW-tuqxEb9OTDSkXi4ofQ",
+                authDomain: "fridgy-8e67c.firebaseapp.com",
+                databaseURL: "https://fridgy-8e67c.firebaseio.com",
+                projectId: "fridgy-8e67c",
+                storageBucket: "fridgy-8e67c.appspot.com",
+                messagingSenderId: "931542015674",
+                appId: "1:931542015674:web:3eb48eff1ff87069c2ec83",
+                measurementId: "G-8YF6289D3X"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+        <script>
+            let ui = new firebaseui.auth.AuthUI(firebase.auth());
+            ui.start('#firebaseui-auth-container', {
+                signInFlow: 'popup',
+                signInSuccessUrl: 'https://julienwagentrutz.com/decodeVideo.html',
+                signInOptions: [
+                    // List of OAuth providers supported.
+                    firebase.auth.EmailAuthProvider.PROVIDER_ID,
+                    firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+                    firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+
+                ],
+            });
+        </script>
+    </body>
+</html>
