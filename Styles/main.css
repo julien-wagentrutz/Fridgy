@@ -15,7 +15,7 @@ body
 .text_logo
 {
     font-size: 4rem;
-    font-family: Montserrat;
+    font-family:  Montserrat , sans-serif ;
     color: #5BA8BA;
 }
 
