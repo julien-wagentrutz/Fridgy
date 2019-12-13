@@ -3,12 +3,12 @@
   "name": "Fridgy",
   "icons": [
     {
-      "src": "/images/icons-192.png",
+      "src": "/Images/Icons/192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/images/icons-512.png",
+      "src": "/Images/Icons/512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
