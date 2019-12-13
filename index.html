@@ -5,16 +5,20 @@
         <meta name="viewport"
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+        <meta name="theme-color" content="#317EFB"/>
+        <script src="https://www.gstatic.com/firebasejs/ui/4.3.0/firebase-ui-auth__fr.js"></script>
         <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
-        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="Styles/main.css">
+        <link rel="manifest" href="/manifest.json">
         <title>Fridgy - Connexion </title>
     </head>
     <body>
-        <div class="container">
-            <div id="firebaseui-auth-container">
-
+        <div class="container container_connexion">
+            <div class="container_logo">
+                <h1 class="text_logo">Fridgy</h1>
+                <img class="img_logo_big" src="Images/Fridgy.svg" alt="Logo de l'application">
             </div>
+            <div id="firebaseui-auth-container"></div>
         </div>
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
@@ -48,6 +52,7 @@
                     firebase.auth.FacebookAuthProvider.PROVIDER_ID,
 
                 ],
+                defaultCountry: 'fr',
             });
         </script>
     </body>
