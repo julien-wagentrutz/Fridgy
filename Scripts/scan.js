@@ -1,23 +1,3 @@
-function callScript ( scriptName, args )
-{
-
-    var xhr_object = null;
-    if(window.XMLHttpRequest) xhr_object = new XMLHttpRequest();
-    else if(window.ActiveXObject)
-        xhr_object = new ActiveXObject("Microsoft.XMLHTTP");
-    else {
-        alert("Votre navigateur ne supporte pas les objets XMLHTTPRequest..."); return; }
-    xhr_object.open("POST", scriptName, true);
-    xhr_object.onreadystatechange = function() {
-        if(xhr_object.readyState == 4) {
-            console.log(xhr_object.responseText);
-        }
-        return xhr_object.readyState;
-    }
-    xhr_object.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-
-    xhr_object.send(args);
-}
 
 Dynamsoft.BarcodeReader._bUseFullFeature = false;
 let scanner = null;
@@ -34,7 +14,6 @@ Dynamsoft.BarcodeScanner.createInstance({
             .then(data => {
                 // Work with JSON data here
                 console.log('BIP')
-                console.log(data)
                 let _user = user.uid
                 let _codeBar = data.code
                 let _productName = data.product.generic_name

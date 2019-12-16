@@ -18,9 +18,9 @@
         <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-auth.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-analytics.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/dynamsoft-javascript-barcode@7.2.2-v2/dist/dbr.js" data-productKeys="t0068NQAAAHhDARq7IafcEhQ7/lw6kBG4DA16q15Ta6uidHu89RxqT3YVqyst0e8ZblqDHS/pkmWKPJWTWzuYtkHuGyyVzig="></script>
+        <script type="text/javascript" src="../Scripts/user.js"></script>
         <script>
             // Your web app's Firebase configuration
-            let user;
             let firebaseConfig = {
                 apiKey: "AIzaSyCMxzO2knPCoMQW-tuqxEb9OTDSkXi4ofQ",
                 authDomain: "fridgy-8e67c.firebaseapp.com",
