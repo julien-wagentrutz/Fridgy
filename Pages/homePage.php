@@ -5,13 +5,22 @@
         <meta name="viewport"
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="../Styles/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">        <link rel="stylesheet" href="../Styles/main.css">
+        <link rel="stylesheet" href="../Styles/homePage.css">
         <title>Fridgy</title>
     </head>
     <body>
         <div class="header">
             <h1>Fridgy</h1>
         </div>
+
+        <div class="cards">
+            <?php include '../include/productCard.html'; ?>
+            <?php include '../include/productCard.html'; ?>
+            <?php include '../include/productCard.html'; ?>
+        </div>
+        
+
         <div class="navBar">
             <div class="icons list">
                 <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,13 +33,13 @@
                 </svg>
                 <h3>Fridgy</h3>
             </div>
-            <div class="icons barcode">
-                <img src="../Images/Icons/navBar/barcode.svg" alt="barcode">
-                <h3>Scanner</h3>
-            </div>
             <div class="icons add">
                 <img src="../Images/Icons/navBar/add.svg" alt="add">
                 <h3>Créer</h3>
+            </div>
+            <div class="icons barcode">
+                <img src="../Images/Icons/navBar/barcode.svg" alt="barcode">
+                <h3>Scanner</h3>
             </div>
             <div class="icons stat">
                 <img src="../Images/Icons/navBar/stat.svg" alt="stat">
