@@ -25,12 +25,6 @@ padding-left: 15px;
     padding-right: 40px;
 }
 
-
-/* .section .signOut{
-    display: flex;
-    align-items: center;
-} */
-
 .signOut{
     display: flex;
     justify-content: space-between;
