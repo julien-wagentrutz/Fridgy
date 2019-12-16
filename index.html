@@ -6,11 +6,15 @@
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+
         <meta name="theme-color" content="#E19A45"/>
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <meta name="apple-mobile-web-app-title" content="Fridgy">
         <link rel="apple-touch-icon" href="/Images/Icons/192x192.png">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+
 
         <script src="https://www.gstatic.com/firebasejs/ui/4.3.0/firebase-ui-auth__fr.js"></script>
         <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
@@ -50,7 +54,7 @@
             let ui = new firebaseui.auth.AuthUI(firebase.auth());
             ui.start('#firebaseui-auth-container', {
                 signInFlow: 'popup',
-                signInSuccessUrl: 'https://julienwagentrutz.com/decodeVideo.html',
+                signInSuccessUrl: 'https://julienwagentrutz.com/Pages/homePage.html',
                 signInOptions: [
                     // List of OAuth providers supported.
                     firebase.auth.EmailAuthProvider.PROVIDER_ID,
