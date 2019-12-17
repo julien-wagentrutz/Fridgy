@@ -1,6 +1,7 @@
 :root{
     --green-color: #8CE890;
     --red-color: #FF7A7A;
+    --main-color: #5BA8BA
 }
 
 .cards{
@@ -93,3 +94,7 @@
     width: 25px;
     height: 25px;
 }
+
+/*
+    Expiry Information
+*/
