@@ -81,6 +81,7 @@ input
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     width: 145px;
+    border-radius: 0;
 }
 
 select
@@ -88,4 +89,5 @@ select
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     width: 120px;
+    border-radius: 0;
 }
