@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../Styles/main.css">
+        <link rel="stylesheet" href="../Styles/manualAdd.css">
+        <title>Fridgy - Créer</title>
+    </head>
+</head>
+<body>
+    <div class="header">
+        <h1>Créer</h1>
+    </div>
+    <main>
+        <form action="" method="get" name="addProductForm">
+            <input type="submit" class="okButton" value="OK">
+            <input type="file" class="addPicture" accept="image/*" capture="environment">
+            <input type="text" class="productName" placeholder="Nom du produit">
+            <input type="date" class="productDate">
+            <select name="annee_hetic">
+                <optgroup required>
+                    <option disabled selected value="">Choissiez une catégorie de produit</option>
+                    <option value="">Viande</option>
+                    <option value="">Produit laitier</option>
+                    <option value="">Légume</option>
+                    <option value="">Fruit</option>
+                    <option value="">Autre</option>
+            </select>
+        </form>
+    </main>
+    <footer>
+        <div class="navBar">
+            <div class="icons list">
+                 <svg width="21" height="15" viewBox="0 0 21 15" fill="none"xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.33337 1.25H19.875" stroke="#5BA8BA"stroke-width="2" stroke-linecap="round"stroke-linejoin="round"/>
+                    <path d="M6.33337 7.5H19.875"stroke="#5BA8BA"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"/>
+                    <path d="M6.33337 13.75H19.875"stroke="#5BA8BA"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"/>
+                    <path d="M1.125 1.25H1.13596"stroke="#5BA8BA"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"/>
+                    <path d="M1.125 7.5H1.13596"stroke="#5BA8BA"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"/>
+                    <path d="M1.125 13.75H1.13596"stroke="#5BA8BA"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"/>
+                </svg>
+                <h3>Fridgy</h3>
+            </div>
+            <div class="icons barcode">
+                <img src="../Images/Icons/navBar/barcode.svg" alt="barcode">
+                <h3>Scanner</h3>
+            </div>
+            <div class="icons add">
+                <img src="../Images/Icons/navBar/add.svg" alt="add">
+                <h3>Créer</h3>
+            </div>
+            <div class="icons stat">
+                <img src="../Images/Icons/navBar/stat.svg" alt="stat">
+                <h3>Stat</h3>
+            </div>
+            <div class="icons user">
+                <img src="../Images/Icons/navBar/user.svg" alt="user">
+                <h3>Compte</h3>
+            </div>        
+        </div>
+    </footer>
+</body>
+</html>
