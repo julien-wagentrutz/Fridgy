@@ -1,3 +1,5 @@
+// Pie chart
+
 let datas1 = {
     "Consommés": 110,
     "Jetés": 15,
@@ -60,7 +62,7 @@ let Piechart = function(options){
                 this.options.doughnutHoleSize * Math.min(this.canvas.width/2,this.canvas.height/2),
                 0,
                 2 * Math.PI,
-                "#E5E5E5"
+                "#F6F5F5"
             )
         }
  
@@ -72,7 +74,7 @@ let firstDougnutChart = new Piechart(
         canvas:firstCanvas,
         data:datas1,
         colors:["#63C97A","#D85239"],
-        doughnutHoleSize:0.5
+        doughnutHoleSize:0.55
     }
 )
 firstDougnutChart.draw()
@@ -82,7 +84,9 @@ let secondDougnutChart = new Piechart(
         canvas:secondCanvas,
         data:datas2,
         colors:["#63C97A","#D85239"],
-        doughnutHoleSize:0.5
+        doughnutHoleSize:0.55
     }
 )
 secondDougnutChart.draw()
+
+// End Pie chart

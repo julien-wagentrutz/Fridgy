@@ -1,3 +1,4 @@
+
 function callScript ( scriptName, args )
 {
     var xhr_object = null;
@@ -9,7 +10,7 @@ function callScript ( scriptName, args )
     xhr_object.open("POST", scriptName, true);
     xhr_object.onreadystatechange = function() {
         if(xhr_object.readyState == 4) {
-            console.log(xhr_object.responseText);
+          //  console.log(xhr_object.responseText);
         }
         return xhr_object.readyState;
     }
@@ -33,19 +34,28 @@ let firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
-let user;
+let userCurrent
 
 firebase.auth().onAuthStateChanged(function(user) {
-    if (user)
+    userCurrent = user;
+    console.log(userCurrent)
+
+    if (userCurrent)
     {
-        _data = "userId=" + user.uid
-        user = callScript("../Treatment/user.php",_data);
+        callScript('../Treatment/verifUser.php','userId=' + userCurrent.uid + '&userName='+ userCurrent.displayName );
+        if(window.location.href == "https://julienwagentrutz.com/")
+         {
+             window.location.replace("https://julienwagentrutz.com/Pages/homePage.php");
+         }
     }
     else
+    {
+        if(window.location.href != "https://julienwagentrutz.com/")
         {
-            
+            window.location.replace("https://julienwagentrutz.com/");
         }
+
+    }
+
 });
-
-
 

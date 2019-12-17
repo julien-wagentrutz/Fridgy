@@ -47,6 +47,8 @@
                     firebase.auth.FacebookAuthProvider.PROVIDER_ID,
                 ],
             });
+
+
         </script>
         <script>
             if ('serviceWorker' in navigator) {
