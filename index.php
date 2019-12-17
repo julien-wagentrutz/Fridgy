@@ -47,9 +47,6 @@
                     firebase.auth.FacebookAuthProvider.PROVIDER_ID,
                 ],
             });
-
-            window.localStorage.setItem('user', firebase.auth());
-
         </script>
         <script>
             if ('serviceWorker' in navigator) {
