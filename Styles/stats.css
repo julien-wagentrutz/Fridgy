@@ -1,4 +1,75 @@
 main
 {
-    margin-top: 150px;
+    margin-top: 20vh;
+    margin-bottom: 15vh;
+    font-size: 17px;
+}
+
+.section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.cardStats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vh;
+    margin-bottom: 1vh;
+    background: white;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.firstStatsContainer
+{
+    margin-bottom: 10vh;
+}
+
+.cardStatsWhiteDot
+{
+    border-radius: 50%;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+}
+
+.cardStatsGreenDot
+{
+    border-radius: 50%;
+    background-color: #63C97A;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+}
+
+.cardStatsRedDot
+{
+    border-radius: 50%;
+    background-color: #D85239;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+}
+
+.cardStatsFlexSubContainer
+{
+    display: flex;
+    align-items: center;
+    width: 60vw;
+}
+
+.cardStats p
+{
+    margin-left: 10px;
+}
+
+canvas
+{
+    display: block;
+    margin-bottom: 4vh;
+    margin-left: auto;
+    margin-right: auto;
 }
