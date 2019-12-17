@@ -34,13 +34,31 @@ let firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
-user = window.localStorage.getItem('user');
-
-console.log(firebase.auth())
+let userCurrent
 
 firebase.auth().onAuthStateChanged(function(user) {
-    console.log(user)
+    userCurrent = user
+
+    if (userCurrent)
+    {
+         if(window.location.href == "https://julienwagentrutz.com/")
+         {
+             window.location.replace("https://julienwagentrutz.com/Pages/homePage.php");
+         }
+    }
+    else
+    {
+        if(window.location.href != "https://julienwagentrutz.com/")
+        {
+            window.location.replace("https://julienwagentrutz.com/");
+        }
+
+    }
 });
+
+
+
+
 
 /*
 if()

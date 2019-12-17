@@ -48,7 +48,7 @@
                 ],
             });
 
-            window.localStorage.setItem('user', firebase.auth());
+
 
         </script>
         <script>
