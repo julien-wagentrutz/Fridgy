@@ -52,7 +52,7 @@
                         <h3>Fridgy</h3>
                     </div>
                 </a>
-                <a href="manualAdd.html">
+                <a href="manualAdd.php">
                     <div class="icons add">
                         <svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3.78571 11.2185H6.0102V7.2873H9.94898V5.3409H6.0102V1.70251H3.78571V5.3409H0V7.2873H3.78571V11.2185Z" fill="#5BA8BA"/>
@@ -67,13 +67,13 @@
                         <h3>Scanner</h3>
                     </div>
                 </a>
-                <a href="stats.html">
+                <a href="stats.php">
                     <div class="icons stat">
                         <img src="../Images/Icons/navBar/stat.svg" alt="stat">
                         <h3>Stat</h3>
                     </div>
                 </a>
-                <a href="account.html">
+                <a href="account.php">
                     <div class="icons user">
                         <img src="../Images/Icons/navBar/user.svg" alt="user">
                         <h3>Compte</h3>
