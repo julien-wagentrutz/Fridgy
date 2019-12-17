@@ -7,42 +7,6 @@ main
     font-size: 17px;
 }
 
-.addProductForm
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 85%;
-}
-
-.addProductForm::placeholder
-{
-    color: #929292;
-}
-
-.okButton
-{
-    width: 100%;
-}
-
-.okButtonV2
-{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.okButtonInput
-{
-    width: 50px;
-    height: 30px;
-    border-radius: 30px;
-    color: white;
-    background: #5ba8ba;
-
-}
-
 .cameraIcon
 {
     display: flex;
@@ -56,3 +20,16 @@ main
     background: #FFFFFF;
 }
 
+.addProductForm
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.addProductForm::placeholder
+{
+    color: #929292;
+}
