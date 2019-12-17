@@ -10,7 +10,7 @@ function callScript ( scriptName, args )
     xhr_object.open("POST", scriptName, true);
     xhr_object.onreadystatechange = function() {
         if(xhr_object.readyState == 4) {
-            console.log(xhr_object.responseText);
+          //  console.log(xhr_object.responseText);
         }
         return xhr_object.readyState;
     }
@@ -37,11 +37,13 @@ firebase.analytics();
 let userCurrent
 
 firebase.auth().onAuthStateChanged(function(user) {
-    userCurrent = user
+    userCurrent = user;
+    console.log(userCurrent)
 
     if (userCurrent)
     {
-         if(window.location.href == "https://julienwagentrutz.com/")
+        callScript('../Treatment/verifUser.php','userId=' + userCurrent.uid + '&userName='+ userCurrent.displayName );
+        if(window.location.href == "https://julienwagentrutz.com/")
          {
              window.location.replace("https://julienwagentrutz.com/Pages/homePage.php");
          }
@@ -54,29 +56,6 @@ firebase.auth().onAuthStateChanged(function(user) {
         }
 
     }
+
 });
 
-
-
-
-
-/*
-if()
-
-firebase.auth().onAuthStateChanged(function(user) {
-    console.log(user)
-});
-
-
-
-console.log(firebase.auth().signOut())
-console.log(firebase.auth())
-
-
-
-firebase.auth().onAuthStateChanged(function(user) {
-    console.log(user)
-});
-
-
-*/

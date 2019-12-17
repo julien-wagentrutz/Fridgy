@@ -65,16 +65,6 @@
         <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-analytics.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/dynamsoft-javascript-barcode@7.2.2-v2/dist/dbr.js" data-productKeys="t0068NQAAAHhDARq7IafcEhQ7/lw6kBG4DA16q15Ta6uidHu89RxqT3YVqyst0e8ZblqDHS/pkmWKPJWTWzuYtkHuGyyVzig="></script>
         <script type="text/javascript" src="../Scripts/user.js"></script>
-        <script>!
-            firebase.auth().onAuthStateChanged(function(userFire) {
-                if (userFire) {
-                    user = userFire
-                    console.log(userFire)
-                } else {
-                    // Envoyer vers parge de connexion
-                }
-            });
-        </script>
         <script type="text/javascript" src="../Scripts/scan.js"></script>
     </body>
 </html>

@@ -49,7 +49,6 @@
             });
 
 
-
         </script>
         <script>
             if ('serviceWorker' in navigator) {
