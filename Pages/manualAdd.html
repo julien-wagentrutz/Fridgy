@@ -24,16 +24,22 @@
                     <img src="../Images/Icons/photo-camera.svg" alt="Camera icon">
                 </div>
                 <input type="file" class="userInput addPicture hiddenfile" accept="image/*" capture="environment" style="display: none;">
-                <input type="text" class="userInput productName" placeholder="Nom du produit">
-                <input type="date" class="userInput productDate">
-                <div class="userInput menuProductCategorie">
+                <div class="userInput">
+                    <p>Nom du produit</p>
+                    <input type="text" class="productName" placeholder="Nom du produit">
+                </div>
+                <div class="userInput">
+                    <p>Date de péremption</p>
+                    <input type="date" class="productDate">
+                </div>
+                <div class="userInput ">
+                    <p>Catégorie produit</p>
                     <select name="productCategorie">
-                        <option value="">Catégorie du produit</option>
-                        <option value="">Viande</option>
+                        <option value="">Autre</option>
                         <option value="">Produit laitier</option>
+                        <option value="">Viande</option>
                         <option value="">Légume</option>
                         <option value="">Fruit</option>
-                        <option value="">Autre</option>
                     </select>
                 </div>
             </form>
