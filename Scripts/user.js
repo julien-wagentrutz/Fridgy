@@ -1,3 +1,4 @@
+
 function callScript ( scriptName, args )
 {
     var xhr_object = null;
@@ -33,19 +34,31 @@ let firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
-let user;
+user = window.localStorage.getItem('user');
+
+console.log(firebase.auth())
 
 firebase.auth().onAuthStateChanged(function(user) {
-    if (user)
-    {
-        _data = "userId=" + user.uid
-        user = callScript("../Treatment/user.php",_data);
-    }
-    else
-        {
-            
-        }
+    console.log(user)
+});
+
+/*
+if()
+
+firebase.auth().onAuthStateChanged(function(user) {
+    console.log(user)
 });
 
 
 
+console.log(firebase.auth().signOut())
+console.log(firebase.auth())
+
+
+
+firebase.auth().onAuthStateChanged(function(user) {
+    console.log(user)
+});
+
+
+*/

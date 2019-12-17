@@ -5,7 +5,7 @@ let datas1 = {
 
 let datas2 = {
     "Consommés": 49,
-    "Jetés": 4,
+    "Jetés": 19,
 }
 
 function drawPieSlice(ctx,centerX, centerY, radius, startAngle, endAngle, color ){
@@ -60,7 +60,7 @@ let Piechart = function(options){
                 this.options.doughnutHoleSize * Math.min(this.canvas.width/2,this.canvas.height/2),
                 0,
                 2 * Math.PI,
-                "#F6F5F5"
+                "#E5E5E5"
             )
         }
  
@@ -72,7 +72,7 @@ let firstDougnutChart = new Piechart(
         canvas:firstCanvas,
         data:datas1,
         colors:["#63C97A","#D85239"],
-        doughnutHoleSize:0.55
+        doughnutHoleSize:0.5
     }
 )
 firstDougnutChart.draw()
@@ -82,7 +82,7 @@ let secondDougnutChart = new Piechart(
         canvas:secondCanvas,
         data:datas2,
         colors:["#63C97A","#D85239"],
-        doughnutHoleSize:0.55
+        doughnutHoleSize:0.5
     }
 )
 secondDougnutChart.draw()
