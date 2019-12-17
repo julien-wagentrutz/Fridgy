@@ -30,25 +30,32 @@
                     <path d="M1.125 7.5H1.13596" stroke="#5BA8BA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M1.125 13.75H1.13596" stroke="#5BA8BA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                <h3>Fridgy</h3>
+                <h3 class="isActive">Fridgy</h3>
             </div>
-            <a href=""></a>
-            <div class="icons add">
-                <img src="../Images/Icons/navBar/add.svg" alt="add">
-                <h3>Créer</h3>
-            </div>
-            <div class="icons barcode">
-                <img src="../Images/Icons/navBar/barcode.svg" alt="barcode">
-                <h3>Scanner</h3>
-            </div>
-            <div class="icons stat">
-                <img src="../Images/Icons/navBar/stat.svg" alt="stat">
-                <h3>Stat</h3>
-            </div>
-            <div class="icons user">
-                <img src="../Images/Icons/navBar/user.svg" alt="user">
-                <h3>Compte</h3>
-            </div>        
+            <a href="manualAdd.html">
+                <div class="icons add">
+                    <img src="../Images/Icons/navBar/add.svg" alt="add">
+                    <h3>Créer</h3>
+                </div>
+            </a>
+            <a href="scan.php">
+                <div class="icons barcode">
+                    <img src="../Images/Icons/navBar/barcode.svg" alt="barcode">
+                    <h3>Scanner</h3>
+                </div>
+            </a>
+            <a href="stats.html">
+                <div class="icons stat">
+                    <img src="../Images/Icons/navBar/stat.svg" alt="stat">
+                    <h3>Stat</h3>
+                </div>
+            </a>
+            <a href="account.html">
+                <div class="icons user">
+                    <img src="../Images/Icons/navBar/user.svg" alt="user">
+                    <h3>Compte</h3>
+                </div>  
+            </a>      
         </div>
         <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-auth.js"></script>
