@@ -20,7 +20,6 @@
             <?php include '../include/productCard.html'; ?>
         </div>
         
-
         <div class="navBar">
             <div class="icons list">
                 <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -33,6 +32,7 @@
                 </svg>
                 <h3>Fridgy</h3>
             </div>
+            <a href=""></a>
             <div class="icons add">
                 <img src="../Images/Icons/navBar/add.svg" alt="add">
                 <h3>Créer</h3>
