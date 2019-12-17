@@ -5,7 +5,7 @@ let datas1 = {
 
 let datas2 = {
     "Consommés": 49,
-    "Jetés": 21,
+    "Jetés": 19,
 }
 
 function drawPieSlice(ctx,centerX, centerY, radius, startAngle, endAngle, color ){
