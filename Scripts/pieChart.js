@@ -1,3 +1,5 @@
+// Pie chart
+
 let datas1 = {
     "Consommés": 110,
     "Jetés": 15,
@@ -86,3 +88,5 @@ let secondDougnutChart = new Piechart(
     }
 )
 secondDougnutChart.draw()
+
+// End Pie chart
