@@ -1,0 +1,35 @@
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    font-size: 17px;
+}
+
+.cameraIcon
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    border: solid;
+    border-color: #5BA8BA;
+    background: #FFFFFF;
+}
+
+.addProductForm
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.addProductForm::placeholder
+{
+    color: #929292;
+}
