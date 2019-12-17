@@ -1,16 +1,11 @@
 main
 {
-    margin-top: 12vh;
+    margin-top: 18vh;
     margin-bottom: 15vh;
     font-size: 17px;
 }
 
-.speechBubble
-{   
-    padding: 3vw 3vw 3vw 3vw;
-}
-
-section{
+.section{
     position: relative;
     width: 100%;
     height: 100%;
