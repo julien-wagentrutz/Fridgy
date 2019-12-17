@@ -1,3 +1,7 @@
+main{
+    padding-bottom: 9vh ;
+}
+
 .arrowLeft{
     margin-top: 16vh;
     width: 100%;
@@ -14,7 +18,8 @@
     display: inline-block;
     position: relative;
     padding-right: 2vw;
-    z-index: 100;
+    z-index: 1;
+    font-size: 22px;
 
 }
 
@@ -26,6 +31,19 @@
     bottom: 0;
     left: 10%;
     border-bottom: 10px solid #5BA8BA;
-    z-index: -100;
+    z-index: -1;
 }
 
+.yogurt,.milk,.egg,.cheese,.ketchup,.ham{
+    display: flex;
+}
+
+.productSection img{
+    padding-left: 8vw;
+    padding-right: 5vw;
+}
+
+.productSection p{
+    padding-right: 5vw;
+    font-size: 17px;
+}
