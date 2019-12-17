@@ -1,9 +1,9 @@
 main{
+    margin-top: 16vh;
     padding-bottom: 9vh ;
 }
 
 .arrowLeft{
-    margin-top: 16vh;
     width: 100%;
     height: 100%;
     padding-left: 3vh;
@@ -14,7 +14,6 @@ main{
 }
 
 .expiry h3{
-    font-weight: lighter;
     display: inline-block;
     position: relative;
     padding-right: 2vw;
