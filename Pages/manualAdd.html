@@ -24,18 +24,19 @@
             <div class="cameraIcon">
                 <img src="../Images/Icons/photo-camera.svg" alt="Camera icon">
             </div>
-            <input type="file" class="addPicture" accept="image/*" capture="environment">
-            <input type="text" class="productName" placeholder="Nom du produit">
-            <input type="date" class="productDate">
-            <select name="annee_hetic">
-                <optgroup required>
-                    <option disabled selected value="">Choissiez une catégorie de produit</option>
+            <input type="file" class="userInput addPicture" accept="image/*" capture="environment">
+            <input type="text" class="userInput productName" placeholder="Nom du produit">
+            <input type="date" class="userInput productDate">
+            <div class="menuProductCategorie">
+                <label for="productCategorie">Catégorie du produit</label>
+                <select name="userInput productCategorie">
                     <option value="">Viande</option>
                     <option value="">Produit laitier</option>
                     <option value="">Légume</option>
                     <option value="">Fruit</option>
                     <option value="">Autre</option>
-            </select>
+                </select>
+            </div>
         </form>
     </main>
     <footer>

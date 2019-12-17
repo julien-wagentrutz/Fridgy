@@ -56,3 +56,20 @@ main
     background: #FFFFFF;
 }
 
+.userInput
+{
+    width: 100%;
+}
+
+input
+{
+    font-size: 17px;
+}
+
+.menuProductCategorie
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #ffffff;
+}
