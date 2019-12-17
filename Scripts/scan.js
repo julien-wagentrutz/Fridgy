@@ -1,6 +1,23 @@
 
+const soundButton = document.querySelector('.sound')
+const soundIcon = document.querySelector('#soundIcon')
+
+soundButton.addEventListener('click', ()=>
+{
+    if(soundIcon.classList.contains('soundOn'))
+    {
+        soundIcon.src = "../Images/Icons/soundOff.svg"
+        soundIcon.classList = "soundOff"
+    }else
+    {
+        soundIcon.src = "../Images/Icons/soundOn.svg"
+        soundIcon.classList = "soundOn"
+    }
+})
+
 Dynamsoft.BarcodeReader._bUseFullFeature = false;
 let scanner = null;
+const bip = document.querySelector('audio')
 Dynamsoft.BarcodeScanner.createInstance({
     UIElement: document.querySelector('#div-video-container'),
     onFrameRead: results => {
@@ -13,7 +30,14 @@ Dynamsoft.BarcodeScanner.createInstance({
             })
             .then(data => {
                 // Work with JSON data here
-                console.log('BIP')
+                if(soundIcon.classList == 'soundOn')
+                {
+                    bip.play()
+                }else
+                {
+                    console.log('bip')
+                }
+
                 let _user = user.uid
                 let _codeBar = data.code
                 let _productName = data.product.generic_name

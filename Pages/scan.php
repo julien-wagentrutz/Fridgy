@@ -6,10 +6,22 @@
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="../Styles/main.css">
+        <link rel="stylesheet" href="../Styles/scan.css">
         <title>Document</title>
     </head>
     <body>
+    <div id="div-video-container">
+        <video class="dbrScanner-video" playsinline="true"></video>
+        <div class="sound">
+            <img src="../Images/Icons/soundOn.svg" alt="soundOn" id="soundIcon" class="soundOn">
+        </div>
+        <div class="scanBloc">
+        
+        <audio src="../Images/bip.mp3"></audio>
+    </div>
 
+
+    </div>
     <footer>
         <div class="navBar">
             <div class="icons list">
@@ -56,10 +68,6 @@
             </a>      
         </div>
     </footer>
-
-        <div id="div-video-container">
-            <video class="dbrScanner-video" playsinline="true"></video>
-        </div>
         <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-auth.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-analytics.js"></script>

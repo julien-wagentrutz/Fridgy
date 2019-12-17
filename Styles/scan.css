@@ -1,0 +1,35 @@
+body{
+    overflow: hidden;
+}
+
+.scanBloc{
+    width: 90vw;
+    height: 220px;
+    position: absolute; 
+    border:  solid 3px white;
+    border-radius: 8px;
+}
+
+#div-video-container{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+/*
+    SOUND BUTTON
+*/
+
+.sound{
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background: white;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    position: absolute; 
+    top: 20px; 
+    right: 4%; 
+    opacity: 0.5;
+}

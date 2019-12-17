@@ -1,5 +1,13 @@
 // Pie chart
 
+//
+//
+// POUR CHANGER IMAGE EN FONCTION DE 50% DE ROUGE ETC :
+// Se servir simplement des données "consommés" et "jetés" faire un calcul simple de si
+// "jetés" est égal ou supérieur à 50% du total de produits et changer l'image en conséquence
+//
+//
+
 let datas1 = {
     "Consommés": 110,
     "Jetés": 15,
