@@ -16,54 +16,48 @@ main
     justify-content: space-between;
     align-items: center;
     height: 6vh;
-    margin-bottom: 1vh;
-    background: white;
     padding-left: 3vw;
     padding-right: 3vw;
+    font-weight: bold;
 }
 
-.firstStatsContainer
+.statsContainer
 {
     margin-bottom: 6vh;
-}
-
-.cardStatsWhiteDot
-{
-    border-radius: 50%;
+    padding-top: 1px;
     background-color: white;
-    width: 15px;
-    height: 15px;
-    padding: 0;
 }
 
-.cardStatsGreenDot
+.statsTitle
 {
-    border-radius: 50%;
-    background-color: #63C97A;
-    width: 15px;
-    height: 15px;
-    padding: 0;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0 0 10px 0;
 }
 
-.cardStatsRedDot
+.cardStatsGreen
 {
-    border-radius: 50%;
-    background-color: #D85239;
-    width: 15px;
-    height: 15px;
-    padding: 0;
+    color: #63C97A;
 }
 
-.cardStatsFlexSubContainer
+.cardStatsRed
 {
-    display: flex;
-    align-items: center;
-    width: 60vw;
+    color: #D85239;
 }
 
 .cardStats p
 {
     margin-left: 10px;
+}
+
+.canvasContainer
+{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
 }
 
 canvas
@@ -72,4 +66,45 @@ canvas
     margin-bottom: 4vh;
     margin-left: auto;
     margin-right: auto;
+    width: 250px;
+}
+
+.total
+{
+    position: absolute;
+    top: 75px;
+    left: calc(50% - 40px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.totalkg
+{
+    position: absolute;
+    top: 75px;
+    left: calc(50% - 40px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.kgNumber
+{
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.kgKg
+{
+    font-size: 15px;
+    font-weight: 600;
 }

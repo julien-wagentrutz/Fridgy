@@ -4,7 +4,7 @@
 //
 // POUR CHANGER IMAGE EN FONCTION DE 50% DE ROUGE ETC :
 // Se servir simplement des données "consommés" et "jetés" faire un calcul simple de si
-// "jetés" est égal ou supérieur à 50% du total de produits et changer l'image en conséquence
+// "jetés" est égal ou supérieur à 20% du total de produits et changer l'image en conséquence
 //
 //
 
@@ -70,7 +70,7 @@ let Piechart = function(options){
                 this.options.doughnutHoleSize * Math.min(this.canvas.width/2,this.canvas.height/2),
                 0,
                 2 * Math.PI,
-                "#F6F5F5"
+                "#FFFFFF"
             )
         }
  
@@ -82,7 +82,7 @@ let firstDougnutChart = new Piechart(
         canvas:firstCanvas,
         data:datas1,
         colors:["#63C97A","#D85239"],
-        doughnutHoleSize:0.55
+        doughnutHoleSize:0.68
     }
 )
 firstDougnutChart.draw()
@@ -92,7 +92,7 @@ let secondDougnutChart = new Piechart(
         canvas:secondCanvas,
         data:datas2,
         colors:["#63C97A","#D85239"],
-        doughnutHoleSize:0.55
+        doughnutHoleSize:0.68
     }
 )
 secondDougnutChart.draw()
