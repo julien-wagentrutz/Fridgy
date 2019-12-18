@@ -1,5 +1,5 @@
 
-function callScript ( scriptName, args )
+function callScript ( scriptName, args , element )
 {
     var xhr_object = null;
     if(window.XMLHttpRequest) xhr_object = new XMLHttpRequest();
@@ -10,12 +10,17 @@ function callScript ( scriptName, args )
     xhr_object.open("POST", scriptName, true);
     xhr_object.onreadystatechange = function() {
         if(xhr_object.readyState == 4) {
-          //  console.log(xhr_object.responseText);
+            if(element != undefined)
+            {
+                document.querySelector(element).innerHTML = xhr_object.responseText;
+            }
+
+         xhr_object.responseText
         }
         return xhr_object.readyState;
     }
     xhr_object.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhr_object.send(args);
+    xhr_object.send(args)
 }
 
 
@@ -38,21 +43,21 @@ let userCurrent
 
 firebase.auth().onAuthStateChanged(function(user) {
     userCurrent = user;
-    console.log(userCurrent)
 
     if (userCurrent)
     {
+        window.localStorage.setItem('userId', userCurrent.uid );
         callScript('../Treatment/verifUser.php','userId=' + userCurrent.uid + '&userName='+ userCurrent.displayName );
         if(window.location.href == "https://julienwagentrutz.com/")
          {
-             window.location.replace("https://julienwagentrutz.com/Pages/homePage.php");
+            // window.location.replace("https://julienwagentrutz.com/Pages/homePage.php");
          }
     }
     else
     {
         if(window.location.href != "https://julienwagentrutz.com/")
         {
-            window.location.replace("https://julienwagentrutz.com/");
+            //window.location.replace("https://julienwagentrutz.com/");
         }
 
     }

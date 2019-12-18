@@ -13,7 +13,7 @@
     <div id="div-video-container">
         <video class="dbrScanner-video" playsinline="true"></video>
         <div class="sound">
-            <img src="../Images/Icons/soundOn.svg" alt="soundOn" id="soundIcon" class="soundOn">
+            <img src="../Images/Icons/SoundOn.svg" alt="soundOn" id="soundIcon" class="soundOn">
         </div>
         <div class="scanBloc">
         
@@ -24,10 +24,12 @@
     </div>
     <footer>
         <div class="navBar">
-            <div class="icons list">
-                <img src="../Images/Icons/navBar/list.svg" alt="list">
-                <h3>Fridgy</h3>
-            </div>
+            <a href="homePage.php">
+                <div class="icons list">
+                    <img src="../Images/Icons/navBar/list.svg" alt="list">
+                    <h3>Fridgy</h3>
+                </div>
+            </a>
             <a href="manualAdd.php">
                 <div class="icons add">
                     <img src="../Images/Icons/navBar/add.svg" alt="add">

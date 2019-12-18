@@ -5,14 +5,16 @@
 }
 
 .cards{
-    margin-top: 110px;
+    margin-top: 100px;
+    margin-bottom: 70px;
+
 }
 
 .productCard{
     height: 140px;
     width: 100%;
     background: white;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     display: flex;
     align-items: center;
     position: relative;
