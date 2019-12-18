@@ -13,8 +13,6 @@
         {
             $query = "UPDATE productScan SET eat = 1 WHERE id = ". $id ;
         }
-    echo $query;
-
 
     $mysqli->query($query);
 

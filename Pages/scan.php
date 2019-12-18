@@ -21,6 +21,18 @@
     </div>
 
     </div>
+    <div class="expiryDateCard">
+        <img src="../Images/poulet 1.png" alt="">
+        <div class="pContainer">
+            <p class="productName">Filet de poulet</p>
+            <p class="brand">Carrefour</p>
+            <form action="" method="get" name="addProductForm" class="addProductForm"></form>
+                <div class="userInput">
+                    <input type="date" class="productDate">
+                </div>
+            </form>
+        </div>
+    </div>
     <footer>
         <div class="navBar">
             <a href="homePage.php">

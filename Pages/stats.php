@@ -61,7 +61,7 @@
                         <div class="statsTitle"><p>Produits ajoutés</p></div>
                         <canvas id="firstCanvas"></canvas>
                         <div class="total">
-                            <div>115</div>
+                            <div id="total_product_js"></div>
                         </div>
                         <div><img class="happyFridgyCanvas1" src="../Images/statsFridgy2.svg" alt="fridgy"></div>
                         <div><img class="angryFridgyCanvas1" src="../Images/statsFridgy3.svg" alt="fridgy"></div>
@@ -71,13 +71,13 @@
                             <div class="cardStatsGreen"></div>
                             <p class="cardStatsGreen">Produits consommés</p>
                         </div>
-                        <div class="cardStatsNumber cardStatsGreen">100</div>
+                        <div class="cardStatsNumber cardStatsGreen" id="total_eat_js"></div>
                     </div>
                     <div class="cardStats">
                         <div class="cardStatsFlexSubContainer">
                             <p class="cardStatsRed">Produits jetés</p>
                         </div>
-                        <div class="cardStatsNumber cardStatsRed">15</div>
+                        <div class="cardStatsNumber cardStatsRed" id="total_trash_js"></div>
                     </div>
                 </div>
                 <div class="statsContainer">
@@ -111,27 +111,7 @@
         <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-auth.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-analytics.js"></script>
-        <script>
-            // Your web app's Firebase configuration
-            let firebaseConfig = {
-                apiKey: "AIzaSyCMxzO2knPCoMQW-tuqxEb9OTDSkXi4ofQ",
-                authDomain: "fridgy-8e67c.firebaseapp.com",
-                databaseURL: "https://fridgy-8e67c.firebaseio.com",
-                projectId: "fridgy-8e67c",
-                storageBucket: "fridgy-8e67c.appspot.com",
-                messagingSenderId: "931542015674",
-                appId: "1:931542015674:web:3eb48eff1ff87069c2ec83",
-                measurementId: "G-8YF6289D3X"
-            };
-            // Initialize Firebase
-            firebase.initializeApp(firebaseConfig);
-            firebase.auth().onAuthStateChanged(function(user) {
-                if (user) {
-                    console.log(user)
-                } else {
-                    console.log('ifdhfs')
-                }
-            });
-        </script>
+        <script src="../Scripts/user.js"></script>
+        <script src="../Scripts/stats.js"></script>
     </body>
 </html>
