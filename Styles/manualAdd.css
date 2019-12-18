@@ -54,12 +54,12 @@ main
     border: solid;
     border-color: #5BA8BA;
     background: #FFFFFF;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .userInput
 {
-    margin-top: 10px;
+    margin-top: 3px;
     height: 40px;
     font-size: 17px;
     width: 100%;
@@ -82,12 +82,14 @@ input
     font-size: 17px;
     width: 145px;
     border-radius: 0;
+    margin-right: 20px;
 }
 
 select
 {
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
-    width: 120px;
+    width: 145px;
     border-radius: 0;
+    margin-right: 20px;
 }
