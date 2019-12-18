@@ -13,7 +13,7 @@
     <div id="div-video-container">
         <video class="dbrScanner-video" playsinline="true"></video>
         <div class="sound">
-            <img src="../Images/Icons/soundOn.svg" alt="soundOn" id="soundIcon" class="soundOn">
+            <img src="../Images/Icons/SoundOn.svg" alt="soundOn" id="soundIcon" class="soundOn">
         </div>
         <div class="scanBloc">
         

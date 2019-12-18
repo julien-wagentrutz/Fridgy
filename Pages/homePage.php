@@ -14,10 +14,8 @@
             <h1>Fridgy</h1>
         </div>
 
-        <div class="cards">
-            <?php include '../include/productCard.html'; ?>
-            <?php include '../include/productCard.html'; ?>
-            <?php include '../include/productCard.html'; ?>
+        <div class="cards" id="card_product_js">
+
         </div>
         
         <div class="navBar">
@@ -61,5 +59,18 @@
         <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-auth.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-analytics.js"></script>
         <script src="../Scripts/user.js"></script>
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js')
+                        .then((reg) => {
+                          //  console.log('Service worker registered.', reg);
+                        });
+                });
+            }
+        </script>
+        <script>
+            callScript('../Treatment/getProductFromUser.php','userId=' + window.localStorage.getItem('userId'),'#card_product_js');
+        </script>
     </body>
 </html>
