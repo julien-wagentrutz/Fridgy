@@ -1,4 +1,4 @@
-<div class="productCard">
+<div class="productCard" data-idproduct=<?php echo  $product['id'] ?>>
     <img src= <?php echo  $product['img_src'] ?> alt="innocent" class="productImage">
     <div class="cardContain">
         <div class="productInformation">
