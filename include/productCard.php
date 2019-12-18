@@ -5,7 +5,7 @@
             <h2 class="productName"><?php echo  $product['product_name'] ?></h2>
             <h3 class="productBrand"><?php echo $product['product_brand'] ?></h3>
             <h3 class="productQuantity"><?php echo $product['product_quantity'] ?></h3>
-            <span class="expiryDate">11.12.20</span>
+            <span class="expiryDate"><?php echo $product['date_to consume'] ?></span>
         </div>
         <div class="sideBarContainer">
             <span class="daysLeft">2 jours</span>
