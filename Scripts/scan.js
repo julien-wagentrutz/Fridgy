@@ -38,12 +38,13 @@ Dynamsoft.BarcodeScanner.createInstance({
                     console.log('bip')
                 }
 
-                let _user = user.uid
+                let _user = userCurrent.uid
                 let _codeBar = data.code
                 let _productName = data.product.generic_name
                 let _productBrand = data.product.brands
                 let _data = "codeBar="+_codeBar+"&user="+_user+"&brand="+_productBrand+"&name="+_productName ;
                 callScript("../Treatment/addProductToBD.php",_data);
+                window.location.replace("https://julienwagentrutz.com/Pages/homePage.php");
             })
             .catch(err => {
                 // Do something for an error here
