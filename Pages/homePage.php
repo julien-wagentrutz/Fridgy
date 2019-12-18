@@ -15,7 +15,8 @@
         </div>
 
         <div class="cards" id="card_product_js">
-
+    </div>
+</div>
         </div>
         
         <div class="navBar">
