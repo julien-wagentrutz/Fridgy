@@ -20,9 +20,6 @@
         <audio src="../Images/bip.mp3"></audio>
     </div>
 
-    .expiryDate 
-
-
     </div>
     <div class="expiryDateCard">
         <img src="../Images/poulet 1.png" alt="">
