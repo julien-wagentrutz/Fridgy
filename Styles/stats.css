@@ -1,6 +1,5 @@
 main
 {
-    margin-top: 18vh;
     margin-bottom: 15vh;
     font-size: 17px;
 }
@@ -15,7 +14,7 @@ main
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 6vh;
+    height: 35px;
     padding-left: 3vw;
     padding-right: 3vw;
     font-weight: bold;
@@ -23,8 +22,9 @@ main
 
 .statsContainer
 {
-    margin-bottom: 6vh;
+    margin-bottom: 4vh;
     padding-top: 1px;
+    padding-bottom: 10px;
     background-color: white;
 }
 
@@ -107,4 +107,70 @@ canvas
 {
     font-size: 15px;
     font-weight: 600;
+}
+
+.happyFridgyCanvas1
+{
+    position: absolute;
+    top: 50%;
+    left: 60vw;
+    width: 60px;
+}
+
+.angryFridgyCanvas1
+{
+    position: absolute;
+    top: 50%;
+    right: 60vw;
+}
+
+.happyFridgyCanvas2
+{
+    position: absolute;
+    top: 50%;
+    right: 60vw;
+    width: 60px;
+    transform: scaleX(-1);
+}
+
+.angryFridgyCanvas2
+{
+    position: absolute;
+    top: 50%;
+    left: 60vw;
+    transform: scaleX(-1);
+}
+
+.speechContainer
+{
+    margin-bottom: 4vh;
+    padding-top: 140px;
+    padding-bottom: 50px;
+    background-color: white;
+    height: 50px;
+    border-radius: 15%;
+}
+
+.bubbleContainer
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-weight: bold;
+    height: 100%;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.bubbleFridgy
+{
+    margin-left: 15px;
+}
+
+.bubbleText
+{
+    width: 50%;
 }
