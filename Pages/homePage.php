@@ -18,6 +18,10 @@
             <?php include '../include/productCard.html'; ?>
             <?php include '../include/productCard.html'; ?>
             <?php include '../include/productCard.html'; ?>
+            <?php include '../include/productCard.html'; ?>
+            <?php include '../include/productCard.html'; ?>
+            <?php include '../include/productCard.html'; ?>
+            <?php include '../include/productCard.html'; ?>
         </div>
         
         <div class="navBar">
