@@ -1,3 +1,4 @@
+
 <div class="productCard" data-idproduct=<?php echo  $product['id'] ?>>
     <img src= <?php echo  $product['img_src'] ?> alt="innocent" class="productImage">
     <div class="cardContain">
@@ -8,9 +9,12 @@
             <span class="expiryDate"><?php echo $product['date_to consume'] ?></span>
         </div>
         <div class="sideBarContainer">
-            <span class="daysLeft">2 jours</span>
+            <div class="daysLeftContainer">
+                <span class="daysLeft js-daysLeft">4</span>
+                <span class="days js-days">jours</span>
+            </div>
             <div class="timeBar">
-                <div class="fillTimeBar"></div>
+                <div class="fillTimeBar js-fillTimeBar"></div>
             </div>
         </div>
         <div class="logoContainer">
