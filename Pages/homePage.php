@@ -14,8 +14,19 @@
             <h1>Fridgy</h1>
         </div>
 
+<<<<<<< HEAD
+        <div class="cards">
+            <?php include '../include/productCard.html'; ?>
+            <?php include '../include/productCard.html'; ?>
+            <?php include '../include/productCard.html'; ?>
+            <?php include '../include/productCard.html'; ?>
+            <?php include '../include/productCard.html'; ?>
+            <?php include '../include/productCard.html'; ?>
+            <?php include '../include/productCard.html'; ?>
+=======
         <div class="cards" id="card_product_js">
 
+>>>>>>> c541c3dca25b7a04da037c04d3adebc39a806b43
         </div>
         
         <div class="navBar">

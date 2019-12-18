@@ -50,6 +50,12 @@
         </div>
         <main>
             <section>
+                <div class="speechContainer">
+                    <div class="bubbleContainer">
+                        <img class="bubbleFridgy" src="../Images/statsFridgy1.svg" alt="fridgy">
+                        <p class="bubbleText">" Voici vos statistiques du mois "</p>
+                    </div>
+                </div>
                 <div class="statsContainer">
                     <div class="canvasContainer">
                         <div class="statsTitle"><p>Produits ajoutés</p></div>
@@ -57,6 +63,8 @@
                         <div class="total">
                             <div>115</div>
                         </div>
+                        <div><img class="happyFridgyCanvas1" src="../Images/statsFridgy2.svg" alt="fridgy"></div>
+                        <div><img class="angryFridgyCanvas1" src="../Images/statsFridgy3.svg" alt="fridgy"></div>
                     </div>
                     <div class="cardStats">
                         <div class="cardStatsFlexSubContainer">
@@ -80,6 +88,8 @@
                             <div class="kgNumber">68</div>
                             <div class="kgKg">kg</div>
                         </div>
+                        <div><img class="happyFridgyCanvas2" src="../Images/statsFridgy2.svg" alt="fridgy"></div>
+                        <div><img class="angryFridgyCanvas2" src="../Images/statsFridgy3.svg" alt="fridgy"></div>
                     </div>
                     <div class="cardStats">
                         <div class="cardStatsFlexSubContainer">
