@@ -70,8 +70,6 @@
                 });
             }
         </script>
-        <script>
-            callScript('../Treatment/getProductFromUser.php','userId=' + window.localStorage.getItem('userId'),'#card_product_js');
-        </script>
+        <script src="../Scripts/product.js"></script>
     </body>
 </html>

@@ -13,8 +13,8 @@ function callScript ( scriptName, args , element )
             if(element != undefined)
             {
                 document.querySelector(element).innerHTML = xhr_object.responseText;
+                buttons()
             }
-
          xhr_object.responseText
         }
         return xhr_object.readyState;
