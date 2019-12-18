@@ -98,5 +98,100 @@
 }
 
 /*
+    Expiry questionMark
+*/
+
+.qMark{
+    display: flex;
+    justify-content: space-between;
+}
+
+.qMark img{
+    padding-right: 5vw;
+} 
+/*
     Expiry Information
 */
+
+
+.menu{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.menu .mover{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transform: translateX(200%);
+    transition: transform 0.6s cubic-bezier(0.75, 0, 0.25, 1);
+    pointer-events: auto;
+}
+
+.menu.is-active .mover{
+    transform: translateX(0%);
+}
+
+.menuContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    height: 100%;
+    padding-top: 4vh;
+    padding-bottom: 12vh ;
+}
+
+.arrowLeft{
+    width: 100%;
+    transform: rotate(180deg);
+}
+
+.arrowLeft img{
+    padding-left: 6vw;
+}
+
+.expiry{
+    padding-left: 9vw;
+}
+
+.expiry h3{
+    display: inline-block;
+    position: relative;
+    padding-right: 2vw;
+    z-index: 1;
+    font-size: 22px;
+
+}
+
+.expiry h3::after{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 10px;
+    bottom: 0;
+    left: 10%;
+    border-bottom: 10px solid #5BA8BA;
+    z-index: -1;
+}
+
+.yogurt,.milk,.egg,.cheese,.ketchup,.ham{
+    display: flex;
+}
+
+.productSection img{
+    padding-left: 8vw;
+    padding-right: 5vw;
+}
+
+.productSection p{
+    padding-right: 5vw;
+    font-size: 17px;
+}
