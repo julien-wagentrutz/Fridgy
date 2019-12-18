@@ -1,17 +1,20 @@
-:root{
+:root
+{
     --green-color: #8CE890;
     --red-color: #FF7A7A;
     --main-color: #5BA8BA
 }
 
-.cards{
+.cards
+{
     margin-top: 100px;
     margin-bottom: 70px;
 
 }
 
-.productCard{
-    height: 140px;
+.productCard
+{
+    min-height: 140px;
     width: 100%;
     background: white;
     margin-bottom: 2px;
@@ -21,81 +24,101 @@
     font-family: 'Rubik', sans-serif;
 }
 
-.productCard .productImage{
-    width: 116px;
-    height: 116px;
+.productCard .productImage
+{
+    width: 100px;
+    height: 100px;
+    padding: 10px; 
 }
 
-.productInformation .productName{
-    font-size: 13px;
-    font-weight: normal;
-    position: absolute; 
-    top: 20px;
-    margin: 0;
+.productInformationContainer
+{
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
 }
 
-.productInformation .productBrand, .productQuantity{
-    position: absolute;
-    font-size: 11px;
-    font-weight: normal;
+.productInformationContainer .productInformation
+{
+    display: flex; 
+    margin: 5px;
+    padding: 5px;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.productInformationContainer .productInformation .caracteristicsProduct
+{
+    display: flex; 
+    flex-direction: column; 
+}
+
+.productInformationContainer .productInformation h2
+{
+    margin: 0; 
+    font-size: 13px; 
+
+}
+
+.productInformationContainer .productInformation h3
+{
+    margin: 0; 
+    font-size: 11px; 
     font-style: italic;
     color: #575757;
-    margin: 0;
+    padding-top: 5px;
 }
 
-.productInformation .productBrand{
-    top: 40px;
+.productInformationContainer .productInformation .expiryDate
+{
+    font-size: 11px; 
 }
 
-.productInformation .productQuantity{
-    top: 55px;
+.productInformationContainer .sideBarContainer
+{
+    width: 90%;
+    margin: 5px;
+    display: flex; 
+    
+    align-items: flex-end; 
+    flex-direction: column;
 }
 
-.productInformation .timeBar{
-    position: absolute;
-    top: 85px;
-    width: 62%;
-    height: 5px;
+.productInformationContainer .sideBarContainer .timeBar
+{
+    width: 100%;
+    height: 5px; 
     background: #F1F1F1;
-    border-radius: 50px;
+    border-radius: 10px; 
+    margin-left: 5px; 
 }
 
-.productInformation .timeBar .fillTimeBar{
-    height: 100%;
+.productInformationContainer .sideBarContainer .timeBar .fillTimeBar
+{ 
+    height: 100%; 
+    background: var(--red-color);
     transform: scaleX(0.3);
     transform-origin: 0 0;
-    background: var(--red-color);
-    border-radius: 50px;
+    border-radius: 10px; 
+    margin-left: 5px; 
 }
 
-.productInformation .expiryDate{
-    font-size: 11px;
-    position: absolute; 
-    top: 20px;
-    right: 8%;
-}
-
-.productInformation .daysLeft{
-    position: absolute; 
-    top: 72px;
-    right: 8%;
-    font-size: 11px;
-    color: var(--red-color);
-    
-}
-
-.productInformation .cardIcons{
-    position: absolute; 
+.productInformationContainer .sideBarContainer .daysLeft
+{
+    font-size: 11px; 
     display: flex; 
-    width: 62%;
-    top: 103px;
-    justify-content: space-around;
+    justify-items: flex-end; 
+    color: var(--red-color);
 }
 
-.productInformation .cardIcons img{
-    width: 25px;
-    height: 25px;
+.productInformationContainer .logoContainer
+{
+    width: 90%;
+    margin: 5px; 
+    display: flex; 
+    justify-content: space-around; 
 }
+
 
 /*
     Expiry questionMark

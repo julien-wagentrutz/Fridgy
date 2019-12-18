@@ -16,7 +16,8 @@
         </div>
 
         <div class="cards" id="card_product_js">
-
+    </div>
+</div>
         </div>
 
         <aside class="menu js-menu">
@@ -113,8 +114,6 @@
                 });
             }
         </script>
-        <script>
-            callScript('../Treatment/getProductFromUser.php','userId=' + window.localStorage.getItem('userId'),'#card_product_js');
-        </script>
+        <script src="../Scripts/product.js"></script>
     </body>
 </html>
