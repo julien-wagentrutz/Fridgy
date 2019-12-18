@@ -16,8 +16,9 @@
         </div>
 
         <div class="cards" id="card_product_js">
-    </div>
-</div>
+            <?php include '../Include/productCard.php'; ?>
+        </div>
+        
         </div>
 
         <aside class="menu js-menu">

@@ -7,7 +7,6 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="../Styles/main.css">
         <link rel="stylesheet" href="../Styles/account.css">
-        <link rel="stylesheet" href="../Styles/homePage.css">
         <title>Mon compte</title>
     </head>
     <body>
