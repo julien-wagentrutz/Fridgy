@@ -46,7 +46,6 @@ Dynamsoft.BarcodeScanner.createInstance({
                 let _productQuantity = data.product.quantity
                 console.log(data)
                 let _data = "codeBar="+_codeBar+"&user="+_user+"&brand="+_productBrand + "&productQuantity="+_productQuantity + "&name="+_productName +"&imgSrc="+_productImg ;
-                console.log(_data)
                 callScript("../Treatment/addProductToBD.php",_data);
             })
             .catch(err => {

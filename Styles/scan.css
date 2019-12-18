@@ -33,3 +33,71 @@ body{
     right: 4%; 
     opacity: 0.5;
 }
+
+.expiryDateCard
+{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+.pContainer p
+{
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-20px);
+    margin: 0 0 20px 0;
+}
+
+.pContainer .productName
+{
+    font-weight: 600;
+}
+
+.pContainer .brand
+{
+    font-weight: 375;
+    font-style: italic;
+}
+
+.pContainer .brand
+{
+    font-weight: 375;
+}
+
+.addProductForm
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.userInput
+{
+    margin-top: 3px;
+    height: 40px;
+    font-size: 14px;
+    background: #ffffff;
+}
+
+.userInput p
+{
+    margin: 0;
+    display: inline-block;
+    padding-left: 20px;
+    line-height: 40px;
+}
+
+input
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    width: 145px;
+    border-radius: 0;
+    margin-right: 20px;
+    transform: translateX(-20px);
+}

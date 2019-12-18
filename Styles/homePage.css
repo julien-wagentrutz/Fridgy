@@ -31,6 +31,10 @@
     padding: 10px; 
 }
 
+/*
+    Information Container 
+*/
+
 .productInformationContainer
 {
     display: flex; 
@@ -74,6 +78,10 @@
     font-size: 11px; 
 }
 
+/*
+    SideBarContainer
+*/
+
 .productInformationContainer .sideBarContainer
 {
     width: 90%;
@@ -96,20 +104,18 @@
 .productInformationContainer .sideBarContainer .timeBar .fillTimeBar
 { 
     height: 100%; 
-    background: var(--red-color);
-    transform: scaleX(0.3);
     transform-origin: 0 0;
     border-radius: 10px; 
-    margin-left: 5px; 
 }
 
-.productInformationContainer .sideBarContainer .daysLeft
+.productInformationContainer .sideBarContainer .daysLeftContainer
 {
     font-size: 11px; 
-    display: flex; 
-    justify-items: flex-end; 
-    color: var(--red-color);
 }
+
+/*
+    logoContainer
+*/
 
 .productInformationContainer .logoContainer
 {

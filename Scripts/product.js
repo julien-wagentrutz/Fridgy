@@ -2,7 +2,6 @@
 let eatButtons
 let trashButtons
 
-
 function buttons()
 {
     eatButtons = document.querySelectorAll('.eat_js')
@@ -13,8 +12,11 @@ function buttons()
             'click',
             () =>
             {
-                let productId = eatButtons[i].dataset.idproduct
+                let productId = trashButtons[i].dataset.idproduct
+
                 callScript('../Treatment/productEatOrTrash.php','choice=0&idProduct='+ productId)
+                let card = document.querySelector('.productCard[data-idproduct= "' + productId + '" ]')
+                card.classList.add('rigjdfok')
             }
         )
 
@@ -24,13 +26,17 @@ function buttons()
             {
                 let productId = trashButtons[i].dataset.idproduct
                 callScript('../Treatment/productEatOrTrash.php','choice=1&idProduct='+ productId)
+                let card = document.querySelector('.productCard[data-idproduct= "' + productId + '" ]')
+                card.classList.add('rigjdfok')
             }
         )
+
+
     }
 
 }
 
 
 
-callScript('../Treatment/getProductFromUser.php','userId=' + window.localStorage.getItem('userId'),'#card_product_js')
+callScript('../Treatment/getProductFromUser.php','userId=' + window.localStorage.getItem('userId'),'#card_product_js','button')
 
