@@ -11,7 +11,7 @@
                 <div class="fillTimeBar"></div>
             </div>
             <div class="cardIcons">
-                <img src="../Images/Icons/cardIcons/cutlery.svg" alt="cutlery">
+                <img src="../Images/Icons/cardIcons/less.svg" alt="less" class="js-less">
                 <img src="../Images/Icons/cardIcons/cutlery.svg" alt="cutlery">
                 <img src="../Images/Icons/cardIcons/delete.svg" alt="delete">
             </div>

@@ -2,9 +2,9 @@
 
 //
 //
-// POUR CHANGER IMAGE EN FONCTION DE 50% DE ROUGE ETC :
-// Se servir simplement des données "consommés" et "jetés" faire un calcul simple de si
-// "jetés" est égal ou supérieur à 20% du total de produits et changer l'image en conséquence
+// POUR CHANGER IMAGE EN FONCTION DE 20% DE ROUGE ETC :
+// Se servir simplement des données "consommés" et "jetés" (donc dans un fichier commun ?) faire un calcul simple de si
+// "jetés" est égal ou supérieur à 20% du total de produits et changer le display de l'image en conséquence
 //
 //
 

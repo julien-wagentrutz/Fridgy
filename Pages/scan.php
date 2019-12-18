@@ -20,14 +20,18 @@
         <audio src="../Images/bip.mp3"></audio>
     </div>
 
+    .expiryDate 
+
 
     </div>
     <footer>
         <div class="navBar">
-            <div class="icons list">
-                <img src="../Images/Icons/navBar/list.svg" alt="list">
-                <h3>Fridgy</h3>
-            </div>
+            <a href="homePage.php">
+                <div class="icons list">
+                    <img src="../Images/Icons/navBar/list.svg" alt="list">
+                    <h3>Fridgy</h3>
+                </div>
+            </a>
             <a href="manualAdd.php">
                 <div class="icons add">
                     <img src="../Images/Icons/navBar/add.svg" alt="add">

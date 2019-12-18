@@ -50,14 +50,14 @@ firebase.auth().onAuthStateChanged(function(user) {
         callScript('../Treatment/verifUser.php','userId=' + userCurrent.uid + '&userName='+ userCurrent.displayName );
         if(window.location.href == "https://julienwagentrutz.com/")
          {
-             window.location.replace("https://julienwagentrutz.com/Pages/homePage.php");
+            // window.location.replace("https://julienwagentrutz.com/Pages/homePage.php");
          }
     }
     else
     {
         if(window.location.href != "https://julienwagentrutz.com/")
         {
-            window.location.replace("https://julienwagentrutz.com/");
+            //window.location.replace("https://julienwagentrutz.com/");
         }
 
     }
