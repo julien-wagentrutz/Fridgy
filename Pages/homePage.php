@@ -30,7 +30,7 @@
                 </svg>
                 <h3 class="isActive">Fridgy</h3>
             </div>
-            <a href="manualAdd.html">
+            <a href="manualAdd.php">
                 <div class="icons add">
                     <img src="../Images/Icons/navBar/add.svg" alt="add">
                     <h3>Créer</h3>
@@ -42,13 +42,13 @@
                     <h3>Scanner</h3>
                 </div>
             </a>
-            <a href="stats.html">
+            <a href="stats.php">
                 <div class="icons stat">
                     <img src="../Images/Icons/navBar/stat.svg" alt="stat">
                     <h3>Stat</h3>
                 </div>
             </a>
-            <a href="account.html">
+            <a href="account.php">
                 <div class="icons user">
                     <img src="../Images/Icons/navBar/user.svg" alt="user">
                     <h3>Compte</h3>

@@ -36,7 +36,7 @@
                         <h3>Fridgy</h3>
                     </div>
                 </a>
-                <a href="manualAdd.html">
+                <a href="manualAdd.php">
                     <div class="icons add">
                         <img src="../Images/Icons/navBar/add.svg" alt="add">                              
                         <h3>Créer</h3>
@@ -48,13 +48,13 @@
                         <h3>Scanner</h3>
                     </div>
                 </a>
-                <a href="stats.html">
+                <a href="stats.php">
                     <div class="icons stat">
                         <img src="../Images/Icons/navBar/stat.svg" alt="stat">
                         <h3>Stat</h3>
                     </div>
                 </a>
-                <a href="account.html">
+                <a href="account.php">
                     <div class="icons user">
                         <svg width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.8333 19.875V17.7917C17.8333 16.6866 17.3943 15.6268 16.6129 14.8454C15.8315 14.064 14.7717 13.625 13.6666 13.625H5.33329C4.22822 13.625 3.16842 14.064 2.38701 14.8454C1.60561 15.6268 1.16663 16.6866 1.16663 17.7917V19.875" stroke="#5BA8BA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
