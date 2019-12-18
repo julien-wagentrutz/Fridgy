@@ -12,8 +12,8 @@
             </div>
             <div class="cardIcons">
                 <img src="../Images/Icons/cardIcons/less.svg" alt="less" class="js-less">
-                <img src="../Images/Icons/cardIcons/cutlery.svg" alt="cutlery">
-                <img src="../Images/Icons/cardIcons/delete.svg" alt="delete">
+                <img src="../Images/Icons/cardIcons/cutlery.svg" alt="cutlery" class="eat_js" data-idproduct=<?php echo  $product['id'] ?>>
+                <img src="../Images/Icons/cardIcons/delete.svg" alt="delete" class="trash_js" data-idproduct=<?php echo  $product['id'] ?>>
             </div>
         </div>
     </div>
