@@ -33,7 +33,7 @@
                     <input type="hidden" name="name" id="nameProduct">
                     <input type="hidden" name="imgSrc" id="imgSrc">
                 </div>
-                <div>
+                <div class="submitButtonContainer">
                     <button class="submitButton" type="submit">Valider</button>
                 </div>
             </form>
