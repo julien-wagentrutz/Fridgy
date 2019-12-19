@@ -39,10 +39,13 @@ body{
     position: absolute;
     top: calc(50% - 110px);
     left: calc(50% - 45vw);
-    padding: 20px 0px;
     justify-content: space-evenly;
     background-color: white;
+    align-items: center;
     width: 90vw;
+    display: none;
+    height: 100%;
+
 }
 
 .flexExpiryDateCard
@@ -52,7 +55,6 @@ body{
 
 .submitButton
 {
-    transform: translateX(32px);
 }
 
 .cardImage
@@ -69,7 +71,6 @@ body{
 {
     display: flex;
     flex-direction: column;
-    transform: translateX(-20px);
     margin: 0 0 20px 0;
 }
 
@@ -122,5 +123,4 @@ input
     width: 145px;
     border-radius: 0;
     margin-right: 20px;
-    transform: translateX(-20px);
 }

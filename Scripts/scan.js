@@ -56,7 +56,9 @@ Dynamsoft.BarcodeScanner.createInstance({
                 let inputProductImg = document.querySelector('#imgSrc')
                 let textName = document.querySelector('#textProductName')
                 let textBrand = document.querySelector('#textProductBrand')
+                let cardImg = document.querySelector('#imgCard')
 
+                cardImg.src = _productImg
                 textName.innerText = _productName
                 textBrand.innerText = _productBrand
                 inputUser.value = _user

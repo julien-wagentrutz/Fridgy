@@ -17,7 +17,7 @@
         </div>
         <div class="scanBloc">
         <div class="expiryDateCard">
-        <img class="cardImage" src="../Images/poulet 1.png" alt="">
+        <img class="cardImage" id="imgCard" src="../Images/poulet 1.png" alt="">
         <div class="pContainer">
             <p class="productName" id="textProductName"></p>
             <p class="brand" id="textProductBrand"></p>
