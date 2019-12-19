@@ -17,10 +17,10 @@
         </div>
         <div class="scanBloc">
         <div class="expiryDateCard">
-        <img class="cardImage" src="../Images/poulet 1.png" alt="">
+        <img class="cardImage" id="imgCard" src="../Images/poulet 1.png" alt="">
         <div class="pContainer">
-            <p class="productName" id="textProductName">Filet de poulet</p>
-            <p class="brand" id="textProductBrand">Carrefour</p>
+            <p class="productName" id="textProductName"></p>
+            <p class="brand" id="textProductBrand"></p>
             <form action="../Treatment/addProductToBD.php" method="post" name="addProductForm" class="addProductForm">
                 <div class="userInput">
                     <input type="date" class="productDate" name="dateConsume" required>
