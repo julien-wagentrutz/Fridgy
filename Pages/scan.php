@@ -33,7 +33,6 @@
             </form>
         </div>
     </div>
-    <button class="button">Oui</button>
     <footer>
         <div class="navBar">
             <a href="homePage.php">
