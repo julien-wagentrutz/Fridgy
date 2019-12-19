@@ -19,7 +19,8 @@ function buttons()
             {
 
                 callScript('../Treatment/productEatOrTrash.php','choice=0&idProduct='+ productId)
-                card.classList.add('rigjdfok')
+                card.classList.add('deleteAnimation')
+                setInterval()
             }
         )
 
@@ -28,7 +29,7 @@ function buttons()
             () =>
             {
                 callScript('../Treatment/productEatOrTrash.php','choice=1&idProduct='+ productId)
-                card.classList.add('rigjdfok')
+                card.classList.add('deleteAnimation')
             }
         )
 

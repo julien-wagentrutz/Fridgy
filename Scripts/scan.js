@@ -43,7 +43,6 @@ Dynamsoft.BarcodeScanner.createInstance({
                 let _codeBar = data.code
                 let _productName = data.product.generic_name
                 let _productBrand = data.product.brands
-                let _data = "codeBar="+_codeBar+"&user="+_user+"&brand="+_productBrand+"&name="+_productName ;
                 if (x.style.display === "none") {
                     x.style.display = "flex";
                 } 
