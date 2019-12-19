@@ -48,7 +48,7 @@ Dynamsoft.BarcodeScanner.createInstance({
                     x.style.display = "flex";
                 } 
                 else {
-                    x.style.display = "none";
+                    productCard.style.display = "none";
                 }
                 let _productImg = data.product.image_front_url
                 let _productQuantity = data.product.quantity
