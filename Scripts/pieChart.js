@@ -1,3 +1,5 @@
+let happyFridgy = document.querySelectorAll(".happy")
+let angryFridgy = document.querySelectorAll(".angry")
 
 
 
@@ -15,6 +17,14 @@ function chart()
 {
     let eat = parseInt(document.querySelector('#total_eat_js').innerText)
     let trash = parseInt(document.querySelector('#total_trash_js').innerText)
+
+    if(trash / (eat + trash) * 100 >= 20)
+    {
+        angryFridgy.classList.add('spawnFridgy')
+    }else
+    {
+        happyFridgy.classList.add('spawnFridgy')
+    }
 
     let datas1 = {
         "Consommés": eat,

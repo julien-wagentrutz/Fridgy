@@ -115,6 +115,7 @@ canvas
     top: 50%;
     left: 60vw;
     width: 60px;
+    display: none;
 }
 
 .angryFridgyCanvas1
@@ -122,6 +123,7 @@ canvas
     position: absolute;
     top: 50%;
     right: 60vw;
+    display: none;
 }
 
 .happyFridgyCanvas2
@@ -131,6 +133,7 @@ canvas
     right: 60vw;
     width: 60px;
     transform: scaleX(-1);
+    display: none;
 }
 
 .angryFridgyCanvas2
@@ -139,6 +142,12 @@ canvas
     top: 50%;
     left: 60vw;
     transform: scaleX(-1);
+    display: none;
+}
+
+.spawnFridgy
+{
+    display: block;
 }
 
 .speechContainer
