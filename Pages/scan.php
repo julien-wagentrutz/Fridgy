@@ -16,12 +16,7 @@
             <img src="../Images/Icons/SoundOn.svg" alt="soundOn" id="soundIcon" class="soundOn">
         </div>
         <div class="scanBloc">
-        
-        <audio src="../Images/bip.mp3"></audio>
-    </div>
-
-    </div>
-    <div class="expiryDateCard">
+        <div class="expiryDateCard">
         <img class="cardImage" src="../Images/poulet 1.png" alt="">
         <div class="pContainer">
             <p class="productName" id="textProductName"></p>
@@ -39,10 +34,14 @@
                     <input type="hidden" name="imgSrc" id="imgSrc">
                 </div>
                 <div>
-                    <button type="submit">Valider</button>
+                    <button class="submitButton" type="submit">Valider</button>
                 </div>
             </form>
         </div>
+    </div>  
+        <audio src="../Images/bip.mp3"></audio>
+    </div>
+
     </div>
     <footer>
         <div class="navBar">
