@@ -34,10 +34,14 @@ body{
     opacity: 0.5;
 }
 
+.hidden
+{
+    display: none;
+}
+
 .expiryDateCard
 {
     padding: 20px 0px;
-    display: flex;
     justify-content: space-evenly;
     background-color: white;
 }
