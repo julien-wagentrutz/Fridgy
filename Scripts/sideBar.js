@@ -4,7 +4,6 @@
 // Mettre le nombre de jour dans .daysLeft
 function sideBar(cardElement)
 {
-    console.log(cardElement)
     const daysLeftElement = cardElement.querySelector('.js-daysLeft')
     const timeBarElement = cardElement.querySelector('.js-fillTimeBar')
     const daysElement = cardElement.querySelector('.js-days')

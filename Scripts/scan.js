@@ -43,8 +43,8 @@ Dynamsoft.BarcodeScanner.createInstance({
                 let _codeBar = data.code
                 let _productName = data.product.generic_name
                 let _productBrand = data.product.brands
-                if (x.style.display === "none") {
-                    x.style.display = "flex";
+                if (productCard.style.display === "none") {
+                    productCard.style.display = "flex";
                 } 
                 else {
                     productCard.style.display = "none";
@@ -54,7 +54,7 @@ Dynamsoft.BarcodeScanner.createInstance({
                 console.log(data)
                 let _data = "codeBar="+_codeBar+"&user="+_user+"&brand="+_productBrand + "&productQuantity="+_productQuantity + "&name="+_productName +"&imgSrc="+_productImg ;
                 callScript("../Treatment/addProductToBD.php",_data);
-                window.location.replace("https://julienwagentrutz.com/Pages/homePage.php");
+               // window.location.replace("https://julienwagentrutz.com/Pages/homePage.php");
             })
             .catch(err => {
                 // Do something for an error here

@@ -20,7 +20,11 @@ function buttons()
 
                 callScript('../Treatment/productEatOrTrash.php','choice=0&idProduct='+ productId)
                 card.classList.add('deleteAnimation')
-                setInterval()
+                let interval = setInterval(()=>
+                {
+                    console.log('bnure')
+                    card.style.display = 'none'
+                },600);
             }
         )
 
@@ -30,6 +34,11 @@ function buttons()
             {
                 callScript('../Treatment/productEatOrTrash.php','choice=1&idProduct='+ productId)
                 card.classList.add('deleteAnimation')
+                let interval = setInterval(()=>
+                {
+                    console.log('bnure')
+                    card.style.display = 'none'
+                },600);
             }
         )
 
