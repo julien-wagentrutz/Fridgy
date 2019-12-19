@@ -11,6 +11,11 @@
         $products->fetch_all();
         foreach ($products as $product)
         {
+            $datetime1 = new DateTime("now");
+            $datetime2 = new DateTime($product['date_to consume']);
+            $interval = $datetime1->diff($datetime2);
+            $product['dayLeft'] = $interval->format('%a');
+            $product['dayLeft'] += 1;
              include '../include/productCard.php';
         }
     }

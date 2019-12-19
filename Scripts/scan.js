@@ -50,6 +50,10 @@ Dynamsoft.BarcodeScanner.createInstance({
                 else {
                     x.style.display = "none";
                 }
+                let _productImg = data.product.image_front_url
+                let _productQuantity = data.product.quantity
+                console.log(data)
+                let _data = "codeBar="+_codeBar+"&user="+_user+"&brand="+_productBrand + "&productQuantity="+_productQuantity + "&name="+_productName +"&imgSrc="+_productImg ;
                 callScript("../Treatment/addProductToBD.php",_data);
                 window.location.replace("https://julienwagentrutz.com/Pages/homePage.php");
             })

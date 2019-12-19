@@ -15,10 +15,7 @@
             <img class="js-menu-button1" src="../Images/Icons/cardIcons/questionMark.svg" alt="">
         </div>
 
-        <div class="cards" id="card_product_js">
-    </div>
-</div>
-        </div>
+        <div class="cards" id="card_product_js"></div>
 
         <aside class="menu js-menu">
             <main class="mover">
@@ -114,6 +111,7 @@
                 });
             }
         </script>
+        <script src="../Scripts/sideBar.js"></script>
         <script src="../Scripts/product.js"></script>
     </body>
 </html>
