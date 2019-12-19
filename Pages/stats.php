@@ -63,8 +63,8 @@
                         <div class="total">
                             <div id="total_product_js"></div>
                         </div>
-                        <div><img class="happyFridgyCanvas1 happy" src="../Images/statsFridgy2.svg" alt="fridgy"></div>
-                        <div><img class="angryFridgyCanvas1 angry" src="../Images/statsFridgy3.svg" alt="fridgy"></div>
+                        <div><img class="happyFridgyCanvas1 happy1" src="../Images/statsFridgy2.svg" alt="fridgy"></div>
+                        <div><img class="angryFridgyCanvas1 angry1" src="../Images/statsFridgy3.svg" alt="fridgy"></div>
                     </div>
                     <div class="cardStats">
                         <div class="cardStatsFlexSubContainer">
@@ -88,8 +88,8 @@
                             <div class="kgNumber">68</div>
                             <div class="kgKg">kg</div>
                         </div>
-                        <div><img class="happyFridgyCanvas2 happy" src="../Images/statsFridgy2.svg" alt="fridgy"></div>
-                        <div><img class="angryFridgyCanvas2 angry" src="../Images/statsFridgy3.svg" alt="fridgy"></div>
+                        <div><img class="happyFridgyCanvas2 happy2" src="../Images/statsFridgy2.svg" alt="fridgy"></div>
+                        <div><img class="angryFridgyCanvas2 angry2" src="../Images/statsFridgy3.svg" alt="fridgy"></div>
                     </div>
                     <div class="cardStats">
                         <div class="cardStatsFlexSubContainer">

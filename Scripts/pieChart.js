@@ -1,5 +1,5 @@
-let happyFridgy = document.querySelectorAll(".happy")
-let angryFridgy = document.querySelectorAll(".angry")
+let happyFridgy1 = document.querySelector(".happy1")
+let angryFridgy1 = document.querySelector(".angry1")
 
 
 
@@ -20,10 +20,10 @@ function chart()
 
     if(trash / (eat + trash) * 100 >= 20)
     {
-        angryFridgy.classList.add('spawnFridgy')
+        angryFridgy1.classList.add('spawnFridgy')
     }else
     {
-        happyFridgy.classList.add('spawnFridgy')
+        happyFridgy1.classList.add('spawnFridgy')
     }
 
     let datas1 = {
