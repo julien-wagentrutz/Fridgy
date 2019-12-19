@@ -16,22 +16,22 @@
             <img src="../Images/Icons/SoundOn.svg" alt="soundOn" id="soundIcon" class="soundOn">
         </div>
         <div class="scanBloc">
-        
+        <div class="expiryDateCard">
+            <img class="cardImage" src="../Images/poulet 1.png" alt="">
+            <div class="pContainer">
+                <p class="productName">Filet de poulet</p>
+                <p class="brand">Carrefour</p>
+                <form action="" method="get" name="addProductForm" class="addProductForm">
+                    <div class="userInput">
+                        <input type="date" class="productDate">
+                    </div>
+                </form>
+                <button class="okButtonCard"></button>
+            </div>
+        </div>        
         <audio src="../Images/bip.mp3"></audio>
     </div>
 
-    </div>
-    <div class="expiryDateCard">
-        <img class="cardImage" src="../Images/poulet 1.png" alt="">
-        <div class="pContainer">
-            <p class="productName">Filet de poulet</p>
-            <p class="brand">Carrefour</p>
-            <form action="" method="get" name="addProductForm" class="addProductForm"></form>
-                <div class="userInput">
-                    <input type="date" class="productDate">
-                </div>
-            </form>
-        </div>
     </div>
     <footer>
         <div class="navBar">
@@ -85,7 +85,7 @@
         <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-auth.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-analytics.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/dynamsoft-javascript-barcode@7.2.2-v2/dist/dbr.js" data-productKeys="t0068NQAAAHhDARq7IafcEhQ7/lw6kBG4DA16q15Ta6uidHu89RxqT3YVqyst0e8ZblqDHS/pkmWKPJWTWzuYtkHuGyyVzig="></script>
-        <!--<script type="text/javascript" src="../Scripts/user.js"></script>
-        <script type="text/javascript" src="../Scripts/scan.js"></script>-->
+        <script type="text/javascript" src="../Scripts/user.js"></script>
+        <script type="text/javascript" src="../Scripts/scan.js"></script>
     </body>
 </html>
