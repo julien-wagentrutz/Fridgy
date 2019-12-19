@@ -66,11 +66,13 @@ body{
 .pContainer
 {
     width: 50%;
+    height: 150px;
 }
 
 .pContainer .productName
 {
     font-weight: 600;
+    margin-top: 0;
 }
 
 .pContainer .brand
