@@ -39,7 +39,6 @@ body{
     position: absolute;
     top: calc(50% - 110px);
     left: calc(50% - 45vw);
-
     padding: 20px 0px;
     justify-content: space-evenly;
     background-color: white;
@@ -51,7 +50,7 @@ body{
     display: flex;
 }
 
-.okButtonCard
+.submitButton
 {
     transform: translateX(32px);
 }
