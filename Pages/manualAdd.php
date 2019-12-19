@@ -26,21 +26,11 @@
                 <input type="file" class="userInput addPicture hiddenfile" accept="image/*" capture="environment" style="display: none;">
                 <div class="userInput">
                     <p>Nom du produit</p>
-                    <input type="text" class="productName" placeholder="Nom du produit">
+                    <input type="text" class="productName" name="name" placeholder="Nom du produit" required>
                 </div>
                 <div class="userInput">
                     <p>Date de péremption</p>
-                    <input type="date" class="productDate">
-                </div>
-                <div class="userInput ">
-                    <p>Catégorie produit</p>
-                    <select name="productCategorie">
-                        <option value="">Autre</option>
-                        <option value="">Produit laitier</option>
-                        <option value="">Viande</option>
-                        <option value="">Légume</option>
-                        <option value="">Fruit</option>
-                    </select>
+                    <input type="date" class="productDate" name="dateConsume" required>
                 </div>
             </form>
         </main>
