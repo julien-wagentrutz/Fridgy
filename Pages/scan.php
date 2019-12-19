@@ -33,7 +33,6 @@
             </form>
         </div>
     </div>
-    <button class="button">Oui</button>
     <footer>
         <div class="navBar">
             <a href="homePage.php">
@@ -88,6 +87,5 @@
         <script src="https://cdn.jsdelivr.net/npm/dynamsoft-javascript-barcode@7.2.2-v2/dist/dbr.js" data-productKeys="t0068NQAAAHhDARq7IafcEhQ7/lw6kBG4DA16q15Ta6uidHu89RxqT3YVqyst0e8ZblqDHS/pkmWKPJWTWzuYtkHuGyyVzig="></script>
         <script type="text/javascript" src="../Scripts/user.js"></script>
         <script type="text/javascript" src="../Scripts/scan.js"></script>
-        <script src="test.js"></script>
     </body>
 </html>
