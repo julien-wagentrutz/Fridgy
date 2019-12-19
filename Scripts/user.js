@@ -16,7 +16,10 @@ function callScript ( scriptName, args , element, etat)
                 if(etat == 'stat')
                 {chart()}
                 else if(etat == 'button')
-                {buttons()}
+                {
+                    buttons()
+
+                }
             }
 
 

@@ -111,7 +111,7 @@
                 });
             }
         </script>
-        <script src="../Scripts/product.js"></script>
         <script src="../Scripts/sideBar.js"></script>
+        <script src="../Scripts/product.js"></script>
     </body>
 </html>
