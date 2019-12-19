@@ -9,7 +9,7 @@
                 <h3 class="productQuantity"><?php echo $product['product_quantity'] ?></h3>
             </div>
 
-            <span class="expiryDate"><?php echo $product['date_to consume'] ?></span>
+            <span class="expiryDate"><?php echo $product['date_to_consume'] ?></span>
         </div>
         <div class="sideBarContainer">
             <div class="daysLeftContainer">

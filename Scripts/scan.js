@@ -43,19 +43,32 @@ Dynamsoft.BarcodeScanner.createInstance({
                 let _codeBar = data.code
                 let _productName = data.product.generic_name
                 let _productBrand = data.product.brands
-                let _data = "codeBar="+_codeBar+"&user="+_user+"&brand="+_productBrand+"&name="+_productName ;
-                if (productCard.style.display === "none") {
-                    productCard.style.display = "flex";
-                } 
-                else {
-                    productCard.style.display = "none";
-                }
                 let _productImg = data.product.image_front_url
                 let _productQuantity = data.product.quantity
                 console.log(data)
-                let _data = "codeBar="+_codeBar+"&user="+_user+"&brand="+_productBrand + "&productQuantity="+_productQuantity + "&name="+_productName +"&imgSrc="+_productImg ;
-                callScript("../Treatment/addProductToBD.php",_data);
-                window.location.replace("https://julienwagentrutz.com/Pages/homePage.php");
+                productCard.classList.add('flexExpiryDateCard')
+
+                let inputUser = document.querySelector('#user')
+                let inputCodeBar = document.querySelector('#codeBar')
+                let inputProductName = document.querySelector('#nameProduct')
+                let inputProductBrand = document.querySelector('#brand')
+                let inputProductQuantity = document.querySelector('#quantity')
+                let inputProductImg = document.querySelector('#imgSrc')
+                let textName = document.querySelector('#textProductName')
+                let textBrand = document.querySelector('#textProductBrand')
+
+                textName.innerText = _productName
+                textBrand.innerText = _productBrand
+                inputUser.value = _user
+                inputCodeBar.value = _codeBar
+                inputProductName.value = _productName
+                inputProductBrand.value = _productBrand
+                inputProductImg.value = _productImg
+                inputProductQuantity.value = _productQuantity
+
+               // let _data = "codeBar="+_codeBar+"&user="+_user+"&brand="+_productBrand + "&productQuantity="+_productQuantity + "&name="+_productName +"&imgSrc="+_productImg ;
+               // callScript("../Treatment/addProductToBD.php",_data);
+               // window.location.replace("https://julienwagentrutz.com/Pages/homePage.php");
             })
             .catch(err => {
                 // Do something for an error here

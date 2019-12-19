@@ -17,18 +17,28 @@
         </div>
         <div class="scanBloc">
         <div class="expiryDateCard">
-            <img class="cardImage" src="../Images/poulet 1.png" alt="">
-            <div class="pContainer">
-                <p class="productName">Filet de poulet</p>
-                <p class="brand">Carrefour</p>
-                <form action="" method="get" name="addProductForm" class="addProductForm">
-                    <div class="userInput">
-                        <input type="date" class="productDate">
-                    </div>
-                </form>
-                <button class="okButtonCard"></button>
-            </div>
-        </div>        
+        <img class="cardImage" src="../Images/poulet 1.png" alt="">
+        <div class="pContainer">
+            <p class="productName" id="textProductName">Filet de poulet</p>
+            <p class="brand" id="textProductBrand">Carrefour</p>
+            <form action="../Treatment/addProductToBD.php" method="post" name="addProductForm" class="addProductForm">
+                <div class="userInput">
+                    <input type="date" class="productDate" name="dateConsume" required>
+                </div>
+                <div>
+                    <input type="hidden" name="codeBar" id="codeBar">
+                    <input type="hidden" name="user" name="" id="user">
+                    <input type="hidden" name="brand" id="brand">
+                    <input type="hidden" name="productQuantity" id="quantity">
+                    <input type="hidden" name="name" id="nameProduct">
+                    <input type="hidden" name="imgSrc" id="imgSrc">
+                </div>
+                <div>
+                    <button class="submitButton" type="submit">Valider</button>
+                </div>
+            </form>
+        </div>
+    </div>  
         <audio src="../Images/bip.mp3"></audio>
     </div>
 
